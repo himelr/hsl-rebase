@@ -1,0 +1,14 @@
+body {
+  color: rgb(85, 85, 85);
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+
+.ui.inverted.pointing.menu .active.item:after {
+  background-color: white !important;
+}
+
+.leaflet-container {
+  width: 36%;
+  height: 40vh;
+}

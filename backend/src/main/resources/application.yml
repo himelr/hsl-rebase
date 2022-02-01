@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url:
+    username:
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+  sql:
+    init:
+      mode: always
+  profiles:
+    active: prod
+hsl:
+  route-url: https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql
+  search-url: https://api.digitransit.fi/geocoding/v1/search
+
+security:
+  secret: McQfTjWnZr4u7x!A%D*G-KaPdRgUkXp2
+  expiration: 8640000
+  token-prefix: Bearer
+  header: Authorization
+
